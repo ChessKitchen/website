@@ -231,7 +231,7 @@ export const SectionHeader: React.FC<SectionHeaderProps> = ({
   return (
     <div className={`text-center space-y-6 ${className}`}>
       {badge && (
-        <Badge variant={accent as any}>
+        <Badge variant={accent as 'brand' | 'royal' | 'sage' | 'honey' | 'neutral'}>
           {BadgeIcon && <BadgeIcon className="h-4 w-4" />}
           <span>{badge}</span>
         </Badge>
@@ -370,7 +370,7 @@ export const Toast: React.FC<ToastProps> = ({
   )
 }
 
-export default {
+const UIComponents = {
   Button,
   Card,
   FeatureCard,
@@ -382,3 +382,5 @@ export default {
   Loading,
   Toast,
 }
+
+export default UIComponents

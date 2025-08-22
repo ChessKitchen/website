@@ -1,7 +1,7 @@
 import Header from '../../components/Header'
 import Footer from '../../components/Footer'
 import CopyButton from '../../components/CopyButton'
-import { Download, Monitor, Smartphone, AlertTriangle, CheckCircle, ExternalLink, Terminal } from 'lucide-react'
+import { Download, Monitor, Smartphone, CheckCircle, ExternalLink, Terminal } from 'lucide-react'
 
 export default function Install() {
     const platforms = [

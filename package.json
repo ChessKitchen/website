@@ -2,21 +2,20 @@
   "name": "pawn-appetit-website",
   "version": "1.0.0",
   "description": "Official website for Pawn Appétit - The Ultimate Chess Toolkit",
-  "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "export": "next build && next export"
+    "deploy": "npm run build && gh-pages -d out"
   },
   "dependencies": {
+    "@next/font": "^14.0.0",
+    "framer-motion": "^10.16.0",
+    "lucide-react": "^0.292.0",
     "next": "^14.0.0",
     "react": "^18.0.0",
-    "react-dom": "^18.0.0",
-    "lucide-react": "^0.292.0",
-    "@next/font": "^14.0.0",
-    "framer-motion": "^10.16.0"
+    "react-dom": "^18.0.0"
   },
   "devDependencies": {
     "@types/node": "^20.0.0",
@@ -25,6 +24,7 @@
     "autoprefixer": "^10.0.0",
     "eslint": "^8.0.0",
     "eslint-config-next": "^14.0.0",
+    "gh-pages": "^6.3.0",
     "postcss": "^8.0.0",
     "tailwindcss": "^3.0.0",
     "typescript": "^5.0.0"

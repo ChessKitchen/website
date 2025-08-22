@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from 'react'
 import { useTheme } from '../app/providers'
-import { Menu, X, Sun, Moon, Github, Download, ChevronDown, Sparkles, Crown, MessageCircle } from 'lucide-react'
+import { Menu, X, Sun, Moon, Github, Download, Sparkles, MessageCircle } from 'lucide-react'
 
 const navigation = [
     { name: 'Features', href: '/features' },

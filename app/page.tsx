@@ -2,7 +2,7 @@
 
 import Header from '../components/Header'
 import Footer from '../components/Footer'
-import { Download, Github, Star, Users, MessageCircle, Zap, Shield, Puzzle, Search, Database, Brain, Monitor, Smartphone, Globe, ArrowRight, Play, Trophy, Target, BookOpen, Cpu, Sparkles, ChefHat, Coffee } from 'lucide-react'
+import { Download, Github, Star, Users, Zap, Shield, Puzzle, Search, Database, Brain, Globe, ArrowRight, Play, Trophy, Target, Sparkles, ChefHat, Coffee } from 'lucide-react'
 import { useGitHubStats, StatDisplay } from '../hooks/useGitHubStats'
 
 const features = [
@@ -45,7 +45,7 @@ const features = [
 ]
 
 export default function Home() {
-  const { stats, loading, error } = useGitHubStats()
+  const { stats } = useGitHubStats()
 
   const dynamicStats = [
     { 
@@ -233,7 +233,7 @@ export default function Home() {
               Trusted by Chess Enthusiasts Worldwide
             </h2>
             <p className="text-xl opacity-90 max-w-2xl mx-auto">
-              Join thousands of players improving their game with Pawn Appétit's 
+              Join thousands of players improving their game with Pawn Appétit&apos;s 
               comprehensive suite of analysis and training tools.
             </p>
           </div>
@@ -269,7 +269,7 @@ export default function Home() {
             </h2>
             <p className="text-body-lg">
               Download Pawn Appétit and start analyzing like a master chef crafts a perfect dish. 
-              It's free, open source, and constantly improving with love from the community.
+              It&apos;s free, open source, and constantly improving with love from the community.
             </p>
           </div>
           
@@ -294,8 +294,8 @@ export default function Home() {
           {/* Testimonial or quote */}
           <div className="max-w-2xl mx-auto pt-12">
             <blockquote className="text-lg italic text-text-secondary">
-              "Like a perfectly balanced meal, Pawn Appétit combines all the essential ingredients 
-              for chess mastery in one delightful package."
+              &ldquo;Like a perfectly balanced meal, Pawn Appétit combines all the essential ingredients 
+              for chess mastery in one delightful package.&rdquo;
             </blockquote>
             <div className="flex items-center justify-center gap-2 mt-4 text-text-tertiary">
               <ChefHat className="h-4 w-4" />

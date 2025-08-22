@@ -6,7 +6,7 @@ import { Github, MessageCircle, Heart, Users, GitPullRequest, Bug, Lightbulb, Co
 import { useGitHubStats, StatDisplay } from '../../hooks/useGitHubStats'
 
 export default function Contribute() {
-  const { stats, loading, error } = useGitHubStats()
+  const { stats } = useGitHubStats()
   const contributionTypes = [
     {
       icon: <Code className="h-8 w-8" />,

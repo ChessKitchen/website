@@ -1,6 +1,6 @@
 import Header from '../../components/Header'
 import Footer from '../../components/Footer'
-import { Users, Heart, Target, Award, Coffee, Github, Linkedin, Twitter } from 'lucide-react'
+import { Users, Heart, Target, Award, Coffee, Github } from 'lucide-react'
 
 export default function About() {
   const teamMembers = [

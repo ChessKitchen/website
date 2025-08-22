@@ -1,4 +1,4 @@
-import { Github, MessageCircle, Heart, Mail, MapPin, Phone, Crown, ChefHat, Sparkles, Coffee, Star } from 'lucide-react'
+import { Github, MessageCircle, Heart, ChefHat, Sparkles, Coffee, Star } from 'lucide-react'
 
 export default function Footer() {
   const currentYear = new Date().getFullYear()

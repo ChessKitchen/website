@@ -2,7 +2,8 @@
 
 import Header from '../../components/Header'
 import Footer from '../../components/Footer'
-import { Download, ExternalLink, Maximize2 } from 'lucide-react'
+import Image from 'next/image'
+import { Download } from 'lucide-react'
 import { useState } from 'react'
 
 export default function Screenshots() {
@@ -121,16 +122,17 @@ export default function Screenshots() {
       <section className="py-16 bg-white dark:bg-gray-900">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="grid grid-cols-1 gap-8 lg:grid-cols-2">
-            {filteredScreenshots.map((screenshot, index) => (
+            {filteredScreenshots.map((screenshot) => (
               <div key={screenshot.filename} className="group relative">
                 <div className="card p-6">
                   <div className="aspect-video bg-gradient-to-br from-gray-100 to-gray-200 dark:from-gray-700 dark:to-gray-800 rounded-lg overflow-hidden relative">
                     {/* Actual screenshot */}
-                    <img
+                    <Image
                       src={`/assets/${screenshot.filename}`}
                       alt={screenshot.title}
                       className="w-full h-full object-cover"
-                      loading="lazy"
+                      width={800}
+                      height={450}
                     />
                   </div>
                   

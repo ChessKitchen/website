@@ -19,6 +19,18 @@ export interface GitHubRepo {
     updated_at: string
 }
 
+export interface GitHubCommit {
+    sha: string
+    commit: {
+        message: string
+        author: {
+            name: string
+            email: string
+            date: string
+        }
+    }
+}
+
 export interface GitHubContributor {
     login: string
     contributions: number
@@ -43,13 +55,13 @@ class GitHubService {
     private readonly REPO_OWNER = 'ChessKitchen'
     private readonly REPO_NAME = 'pawn-appetit'
     private readonly CACHE_DURATION = 5 * 60 * 1000 // 5 minutes
-    private cache: { [key: string]: { data: any; timestamp: number } } = {}
+    private cache: { [key: string]: { data: unknown; timestamp: number } } = {}
 
     private async fetchWithCache<T>(url: string, cacheKey: string): Promise<T> {
         // Check cache first
         const cached = this.cache[cacheKey]
         if (cached && Date.now() - cached.timestamp < this.CACHE_DURATION) {
-            return cached.data
+            return cached.data as T
         }
 
         try {
@@ -77,7 +89,7 @@ class GitHubService {
             console.error(`Error fetching ${cacheKey}:`, error)
             // Return cached data if available, even if stale
             if (cached) {
-                return cached.data
+                return cached.data as T
             }
             throw error
         }
@@ -104,7 +116,7 @@ class GitHubService {
         )
     }
 
-    async getCommits(): Promise<any[]> {
+    async getCommits(): Promise<GitHubCommit[]> {
         return this.fetchWithCache(
             `https://api.github.com/repos/${this.REPO_OWNER}/${this.REPO_NAME}/commits?per_page=1`,
             'commits'
@@ -113,10 +125,9 @@ class GitHubService {
 
     async getStats(): Promise<GitHubStats> {
         try {
-            const [repoInfo, contributors, releases] = await Promise.all([
+            const [repoInfo, contributors] = await Promise.all([
                 this.getRepositoryInfo(),
-                this.getContributors(),
-                this.getReleases()
+                this.getContributors()
             ])
 
             const downloadCount = repoInfo.stargazers_count * 72;

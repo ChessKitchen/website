@@ -333,8 +333,8 @@ export default function Features() {
               The Future of Chess Analysis
             </h2>
             <p className="text-body-lg max-w-3xl mx-auto">
-              We're constantly working on new features to improve your chess experience.
-              Here's what's cooking in our kitchen.
+              We&apos;re constantly working on new features to improve your chess experience.
+              Here&apos;s what&apos;s cooking in our kitchen.
             </p>
           </div>
 
