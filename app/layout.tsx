@@ -2,7 +2,7 @@ import './globals.css'
 import { Inter } from 'next/font/google'
 import { Providers } from './providers'
 import { StructuredData } from '../components/StructuredData'
-import { GoogleAnalytics } from '../components/GoogleAnalytics'
+import { GoogleAnalytics } from '@next/third-parties/google'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -51,7 +51,7 @@ export default function RootLayout({
         <StructuredData />
       </head>
       <body className={inter.className}>
-        <GoogleAnalytics GA_MEASUREMENT_ID={process.env.NEXT_PUBLIC_GA_ID || ""} />
+        <GoogleAnalytics gaId={process.env.NEXT_PUBLIC_GA_ID || ""} />
         <Providers>
           {children}
         </Providers>
