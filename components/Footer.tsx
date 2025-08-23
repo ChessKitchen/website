@@ -93,6 +93,7 @@ export default function Footer() {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-12 h-12 bg-surface-primary dark:bg-gray-800 hover:bg-brand-50 dark:hover:bg-brand-900/30 border border-gray-200 dark:border-gray-700 hover:border-brand-300 dark:hover:border-brand-600 rounded-2xl flex items-center justify-center transition-all duration-300 group shadow-soft hover:shadow-brand"
+                aria-label="View source code on GitHub"
               >
                 <Github className="h-5 w-5 text-text-secondary group-hover:text-brand-600 transition-colors" />
               </a>
@@ -101,6 +102,7 @@ export default function Footer() {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-12 h-12 bg-surface-primary dark:bg-gray-800 hover:bg-accent-royal-50 dark:hover:bg-accent-royal-900/30 border border-gray-200 dark:border-gray-700 hover:border-accent-royal-300 dark:hover:border-accent-royal-600 rounded-2xl flex items-center justify-center transition-all duration-300 group shadow-soft hover:shadow-royal"
+                aria-label="Join our Discord community"
               >
                 <MessageCircle className="h-5 w-5 text-text-secondary group-hover:text-accent-royal-600 transition-colors" />
               </a>

@@ -362,6 +362,7 @@ export const Toast: React.FC<ToastProps> = ({
         <button
           onClick={onClose}
           className="text-current hover:opacity-70 transition-opacity"
+          aria-label="Close notification"
         >
           ×
         </button>

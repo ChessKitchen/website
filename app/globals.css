@@ -519,7 +519,19 @@ a:hover {
 .container-brand {
   max-width: 1280px;
   margin: 0 auto;
-  padding: 0 1.5rem;
+  padding: 0 1rem;
+}
+
+@media (min-width: 475px) {
+  .container-brand {
+    padding: 0 1.25rem;
+  }
+}
+
+@media (min-width: 640px) {
+  .container-brand {
+    padding: 0 1.5rem;
+  }
 }
 
 .section-brand {

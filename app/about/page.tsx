@@ -192,6 +192,7 @@ export default function About() {
                           target="_blank"
                           rel="noopener noreferrer"
                           className="text-gray-400 hover:text-gray-600 dark:hover:text-gray-300"
+                          aria-label={`View ${member.name}'s GitHub profile`}
                         >
                           <Github className="h-5 w-5" />
                         </a>
