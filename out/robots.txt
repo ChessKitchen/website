@@ -1,7 +1,0 @@
-User-Agent: *
-Allow: /
-Disallow: /private/
-Disallow: /admin/
-
-Host: https://pawnappetit.com
-Sitemap: https://pawnappetit.com/sitemap.xml
