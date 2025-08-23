@@ -51,7 +51,7 @@ export default function RootLayout({
         <StructuredData />
       </head>
       <body className={inter.className}>
-              <GoogleAnalytics GA_MEASUREMENT_ID={process.env.NEXT_PUBLIC_GA_ID || ""} />
+        <GoogleAnalytics GA_MEASUREMENT_ID={process.env.NEXT_PUBLIC_GA_ID || ""} />
         <Providers>
           {children}
         </Providers>
