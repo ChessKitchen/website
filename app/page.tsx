@@ -111,7 +111,6 @@ export default function Home() {
                 <ChefHat className="h-4 w-4" />
                 <span>Open Source</span>
               </div>
-              <ArrowRight className="h-4 w-4 animate-chess-bounce" />
             </div>
 
             {/* Enhanced Hero Title */}
