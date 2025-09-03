@@ -9,7 +9,7 @@ export default function Install() {
             name: 'Windows',
             icon: '🖥️',
             version: 'Windows 7 and above',
-            downloadUrl: 'https://github.com/ChessKitchen/pawn-appetit/releases/latest/download/Pawn.Appetit_0.5.0_x64-setup.exe',
+            downloadUrl: 'https://github.com/ChessKitchen/pawn-appetit/releases/latest/download/Pawn.Appetit_0.5.1_x64-setup.exe',
             instructions: [
                 'Download the Windows installer (.exe file)',
                 'Run the installer as administrator',
@@ -27,7 +27,7 @@ export default function Install() {
             name: 'macOS',
             icon: '🍎',
             version: 'macOS 10.15 (Catalina) and above',
-            downloadUrl: 'https://github.com/ChessKitchen/pawn-appetit/releases/latest/download/Pawn.Appetit_0.5.0_x64.dmg',
+            downloadUrl: 'https://github.com/ChessKitchen/pawn-appetit/releases/latest/download/Pawn.Appetit_0.5.1_x64.dmg',
             instructions: [
                 'Download the macOS disk image (.dmg file)',
                 'Open the downloaded .dmg file',
@@ -45,7 +45,7 @@ export default function Install() {
             name: 'Linux',
             icon: '🐧',
             version: 'Ubuntu 22.04+ or equivalent',
-            downloadUrl: 'https://github.com/ChessKitchen/pawn-appetit/releases/latest/download/Pawn.Appetit_0.5.0_amd64.AppImage',
+            downloadUrl: 'https://github.com/ChessKitchen/pawn-appetit/releases/latest/download/Pawn.Appetit_0.5.1_amd64.AppImage',
             instructions: [
                 'Download the Linux AppImage file',
                 'Make the file executable: chmod +x pawn-appetit-linux.AppImage',
