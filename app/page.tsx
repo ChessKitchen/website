@@ -2,7 +2,7 @@
 
 import Header from '../components/Header'
 import Footer from '../components/Footer'
-import { Download, Github, Star, Users, Zap, Shield, Puzzle, Search, Database, Brain, Globe, ArrowRight, Play, Trophy, Target, Sparkles, ChefHat, Coffee } from 'lucide-react'
+import { Download, Github, Star, Users, Zap, Shield, Puzzle, Search, Database, Brain, ArrowRight, Play, Trophy, Target, Sparkles, ChefHat, Coffee } from 'lucide-react'
 import { useGitHubStats, StatDisplay } from '../hooks/useGitHubStats'
 
 const features = [

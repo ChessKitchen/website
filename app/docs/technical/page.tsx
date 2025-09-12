@@ -1,6 +1,6 @@
 import Header from '../../../components/Header'
 import Footer from '../../../components/Footer'
-import { Code, Layers, Database, Zap, Package, GitBranch, Terminal, FileCode, Cpu } from 'lucide-react'
+import { Code, Layers, Package, Terminal } from 'lucide-react'
 
 export default function TechnicalDocumentation() {
   const architectureComponents = [
@@ -246,7 +246,7 @@ export default function TechnicalDocumentation() {
               </span>
             </h1>
             <p className="mt-6 text-lg leading-8 text-gray-600 dark:text-gray-300 sm:text-xl">
-              Deep dive into Pawn Appétit's architecture, APIs, development setup, and deployment processes. 
+              Deep dive into Pawn Appétit&apos;s architecture, APIs, development setup, and deployment processes.
               For developers and advanced users.
             </p>
           </div>

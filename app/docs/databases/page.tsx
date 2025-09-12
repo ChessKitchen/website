@@ -1,6 +1,6 @@
 import Header from '../../../components/Header'
 import Footer from '../../../components/Footer'
-import { Database, Download, Globe, HardDrive, Search, Filter, TrendingUp, Settings, BookOpen, Users, Clock, Award } from 'lucide-react'
+import { Database, Globe, HardDrive, Search, TrendingUp, BookOpen, Users, Clock, Award } from 'lucide-react'
 
 export default function DatabasesDocumentation() {
   const databaseSources = [

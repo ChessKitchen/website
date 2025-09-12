@@ -1,6 +1,6 @@
 import Header from '../../../components/Header'
 import Footer from '../../../components/Footer'
-import { HelpCircle, AlertTriangle, Monitor, Cpu, Database, Globe, Settings, Download, RefreshCw } from 'lucide-react'
+import { HelpCircle, AlertTriangle, Monitor, Cpu, Database, Settings, Download } from 'lucide-react'
 
 export default function FAQ() {
   const faqCategories = [
@@ -438,7 +438,7 @@ export default function FAQ() {
               Still Need Help?
             </h2>
             <p className="mt-6 text-lg leading-8 text-primary-100">
-              Our community and developers are here to help. Don't hesitate to reach out!
+              Our community and developers are here to help. Don&apos;t hesitate to reach out!
             </p>
             <div className="mt-10 flex items-center justify-center gap-x-6">
               <a

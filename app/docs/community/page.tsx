@@ -1,6 +1,6 @@
 import Header from '../../../components/Header'
 import Footer from '../../../components/Footer'
-import { Users, Heart, Code, Globe, MessageSquare, GitBranch, Bug, Star, Coffee, Award } from 'lucide-react'
+import { Users, Heart, Code, Globe, MessageSquare, Bug, Star, Coffee, Award } from 'lucide-react'
 
 export default function Community() {
   const communityChannels = [
@@ -271,7 +271,7 @@ export default function Community() {
               Ways to Contribute
             </h2>
             <p className="mt-6 text-lg leading-8 text-gray-600 dark:text-gray-300">
-              Every contribution matters, whether you're a developer, designer, writer, or chess enthusiast.
+              Every contribution matters, whether you&apos;re a developer, designer, writer, or chess enthusiast.
             </p>
           </div>
 

@@ -266,7 +266,7 @@ export default function GettingStarted() {
               Interface Overview
             </h2>
             <p className="mt-6 text-lg leading-8 text-gray-600 dark:text-gray-300">
-              Understand the main components of Pawn Appétit's user interface.
+              Understand the main components of Pawn Appétit&apos;s user interface.
             </p>
           </div>
 
@@ -334,7 +334,7 @@ export default function GettingStarted() {
               Ready to Dive Deeper?
             </h2>
             <p className="mt-6 text-lg leading-8 text-primary-100">
-              Now that you're set up, explore our comprehensive user guides and advanced features.
+              Now that you&apos;re set up, explore our comprehensive user guides and advanced features.
             </p>
             <div className="mt-10 flex items-center justify-center gap-x-6">
               <a

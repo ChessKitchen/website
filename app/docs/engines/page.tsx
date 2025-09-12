@@ -1,6 +1,6 @@
 import Header from '../../../components/Header'
 import Footer from '../../../components/Footer'
-import { Cpu, Download, Settings, Zap, AlertTriangle, CheckCircle, Info, Wrench, Monitor, HelpCircle } from 'lucide-react'
+import { Cpu, Download, AlertTriangle, CheckCircle, Info, Wrench, Monitor } from 'lucide-react'
 
 export default function EngineManagement() {
   const supportedEngines = [

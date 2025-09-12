@@ -3,6 +3,7 @@
 import { useState, useEffect } from 'react'
 import { useTheme } from '../app/providers'
 import { Menu, X, Sun, Moon, Github, Download, Sparkles, MessageCircle } from 'lucide-react'
+import Link from 'next/link'
 
 const navigation = [
     { name: 'Features', href: '/features' },
@@ -33,7 +34,7 @@ export default function Header() {
             <nav className="container-brand flex items-center justify-between h-16 sm:h-20">
                 {/* Enhanced Logo */}
                 <div className="flex items-center min-w-0 flex-1 sm:flex-initial">
-                    <a href="/" className="flex items-center space-x-2 sm:space-x-3 group min-w-0">
+                    <Link href="/" className="flex items-center space-x-2 sm:space-x-3 group min-w-0">
                         <div className="relative flex-shrink-0">
                             {/* Chess piece icon with enhanced styling */}
                             <div className="w-8 h-8 sm:w-10 sm:h-10 bg-gradient-to-br from-brand-500 via-brand-600 to-accent-royal-600 rounded-xl sm:rounded-2xl flex items-center justify-center text-white font-bold text-lg sm:text-xl group-hover:scale-110 transition-all duration-300 shadow-brand">
@@ -56,7 +57,7 @@ export default function Header() {
                                 <span className="xs:hidden">Pawn</span>
                             </span>
                         </div>
-                    </a>
+                    </Link>
                 </div>
 
                 {/* Enhanced Desktop Navigation */}

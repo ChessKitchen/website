@@ -1,6 +1,6 @@
 import Header from '../../../components/Header'
 import Footer from '../../../components/Footer'
-import { Brain, Download, Eye, FileText, Globe, Zap, TrendingUp, Settings, Import, Play } from 'lucide-react'
+import { Brain, Eye, FileText, Globe, TrendingUp } from 'lucide-react'
 
 export default function GameAnalysis() {
   const importMethods = [
@@ -171,7 +171,7 @@ export default function GameAnalysis() {
               </span>
             </h1>
             <p className="mt-6 text-lg leading-8 text-gray-600 dark:text-gray-300 sm:text-xl">
-              Master the art of chess analysis with Pawn Appétit's powerful engine analysis, 
+              Master the art of chess analysis with Pawn Appétit&apos;s powerful engine analysis, 
               annotation tools, and game import features.
             </p>
           </div>

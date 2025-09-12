@@ -1,6 +1,6 @@
 import Header from '../../../components/Header'
 import Footer from '../../../components/Footer'
-import { FileText, BookOpen, Trophy, Target, FolderOpen, Upload, Download, Search, Edit, Trash2, Copy, Share2, Star, Archive, Filter } from 'lucide-react'
+import { FileText, BookOpen, Trophy, Target, FolderOpen, Upload, Search, Edit } from 'lucide-react'
 
 export default function FilesDocumentation() {
   const fileTypes = [
