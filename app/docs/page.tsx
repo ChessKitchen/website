@@ -1,6 +1,6 @@
 import Header from '../../components/Header'
 import Footer from '../../components/Footer'
-import { BookOpen, Search, FileText, Code, HelpCircle, ExternalLink } from 'lucide-react'
+import { BookOpen, FileText, Code, HelpCircle, ExternalLink } from 'lucide-react'
 
 export default function Docs() {
   const docSections = [
@@ -11,21 +11,18 @@ export default function Docs() {
       links: [
         { name: 'Getting Started', href: '/docs/getting-started' },
         { name: 'Game Analysis', href: '/docs/analysis' },
-        { name: 'Repertoire Training', href: '/docs/repertoire' },
         { name: 'Engine Management', href: '/docs/engines' },
-        { name: 'Database Import', href: '/docs/databases' }
+        { name: 'Databases', href: '/docs/databases' },
+        { name: 'Files', href: '/docs/files' },
+        { name: 'Accounts', href: '/docs/accounts' },
       ]
     },
     {
       icon: <Code className="h-8 w-8" />,
-      title: 'API Reference',
-      description: 'Technical documentation for developers and advanced users.',
+      title: 'Technical Documentation',
+      description: 'Architecture, API reference, and development guides for developers.',
       links: [
-        { name: 'Plugin Development', href: '/docs/api/plugins' },
-        { name: 'Engine API', href: '/docs/api/engines' },
-        { name: 'Database API', href: '/docs/api/databases' },
-        { name: 'Event System', href: '/docs/api/events' },
-        { name: 'Configuration', href: '/docs/api/config' }
+        { name: 'Technical Overview & Development Setup', href: '/docs/technical' },
       ]
     },
     {
@@ -34,10 +31,10 @@ export default function Docs() {
       description: 'Common questions and solutions to frequent issues.',
       links: [
         { name: 'Frequently Asked Questions', href: '/docs/faq' },
-        { name: 'Installation Issues', href: '/docs/troubleshooting/installation' },
-        { name: 'Engine Problems', href: '/docs/troubleshooting/engines' },
-        { name: 'Performance Tips', href: '/docs/troubleshooting/performance' },
-        { name: 'Platform-Specific Issues', href: '/docs/troubleshooting/platforms' }
+        { name: 'Installation Issues', href: '/docs/faq' },
+        { name: 'Engine Problems', href: '/docs/faq' },
+        { name: 'Performance Tips', href: '/docs/faq' },
+        { name: 'Community Support', href: '/docs/community' }
       ]
     }
   ]
@@ -66,12 +63,6 @@ export default function Docs() {
   ]
 
   const resources = [
-    {
-      title: 'Video Tutorials',
-      description: 'Step-by-step video guides for common tasks.',
-      url: '#',
-      icon: '🎥'
-    },
     {
       title: 'Community Forum',
       description: 'Get help from the community and share tips.',
@@ -110,18 +101,6 @@ export default function Docs() {
               Everything you need to master Pawn Appétit, from basic usage to advanced 
               features and development guides.
             </p>
-            
-            {/* Search Bar */}
-            <div className="mt-8 max-w-md mx-auto">
-              <div className="relative">
-                <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 h-5 w-5 text-gray-400" />
-                <input
-                  type="text"
-                  placeholder="Search documentation..."
-                  className="w-full pl-10 pr-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg bg-white dark:bg-gray-800 text-gray-900 dark:text-white placeholder-gray-500 dark:placeholder-gray-400 focus:ring-2 focus:ring-primary-500 focus:border-transparent"
-                />
-              </div>
-            </div>
           </div>
         </div>
       </section>
@@ -210,39 +189,6 @@ export default function Docs() {
         </div>
       </section>
 
-      {/* Popular Topics */}
-      <section className="py-16 bg-white dark:bg-gray-900">
-        <div className="mx-auto max-w-7xl px-6 lg:px-8">
-          <div className="mx-auto max-w-2xl text-center mb-12">
-            <h2 className="text-3xl font-bold tracking-tight text-gray-900 dark:text-white sm:text-4xl">
-              Popular Topics
-            </h2>
-          </div>
-
-          <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
-            {[
-              'Setting up your first engine',
-              'Importing games from Chess.com',
-              'Creating opening repertoires',
-              'Analyzing your games',
-              'Customizing the interface',
-              'Installing additional engines',
-              'Database management',
-              'Keyboard shortcuts',
-              'Export and sharing options'
-            ].map((topic) => (
-              <a
-                key={topic}
-                href="#"
-                className="block p-4 border border-gray-200 dark:border-gray-700 rounded-lg hover:border-primary-300 dark:hover:border-primary-600 transition-colors"
-              >
-                <span className="text-gray-900 dark:text-white">{topic}</span>
-              </a>
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* Additional Resources */}
       <section className="py-16 bg-gray-50 dark:bg-gray-800">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
@@ -255,7 +201,7 @@ export default function Docs() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
+          <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
             {resources.map((resource) => (
               <a
                 key={resource.title}

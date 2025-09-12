@@ -69,13 +69,6 @@ export default function Home() {
       icon: <Users className="h-5 w-5" />, 
       color: 'text-accent-royal-500' 
     },
-    { 
-      label: 'Languages', 
-      value: stats?.languages?.length || 0, 
-      fallback: '15+',
-      icon: <Globe className="h-5 w-5" />, 
-      color: 'text-brand-500' 
-    },
   ]
   return (
     <div className="min-h-screen bg-surface-primary">
@@ -237,7 +230,7 @@ export default function Home() {
             </p>
           </div>
           
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-8">
             {dynamicStats.map((stat, index) => (
               <div key={index} className="text-center space-y-4 group">
                 <div className="flex justify-center mb-4">
